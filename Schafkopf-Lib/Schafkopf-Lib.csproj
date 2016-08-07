@@ -40,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Farbgeier.cs" />
+    <Compile Include="Farbwenz.cs" />
+    <Compile Include="Geier.cs" />
+    <Compile Include="Hochzeit.cs" />
+    <Compile Include="Karte.cs" />
+    <Compile Include="IKontrolle.cs" />
+    <Compile Include="Regelwahl.cs" />
+    <Compile Include="Sauspiel.cs" />
+    <Compile Include="Solo.cs" />
+    <Compile Include="Wenz.cs" />
+    <Compile Include="Modell.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

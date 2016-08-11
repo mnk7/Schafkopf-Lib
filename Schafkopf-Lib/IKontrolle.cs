@@ -1,13 +1,12 @@
 ﻿using Schafkopf_Lib;
 
-interface IKontrolle
-{
+interface IKontrolle {
     /**
 	 * Bestimmt den Sieger eines Spiels
 	 * @param model
 	 * @return SpielerID des Siegers
 	 */
-    int Sieger(Modell m, int erster);
+    int Sieger( Modell m, int erster );
 
     /**
 	 * Bestimmt, ob ein Spielzug erlaubt ist und gibt das Ergebnis zurück
@@ -15,14 +14,14 @@ interface IKontrolle
 	 * @param ID
 	 * @return erlaubt
 	 */
-    bool Erlaubt(Modell m, int ID);
+    bool Erlaubt( Modell m, int ID );
 
     /**
 	 * Bestimmt einen eventuellen Mitspieler
 	 * @param model
 	 * @return mitspieler oder null
 	 */
-    int Mitspieler(Modell m);
+    int Mitspieler( Modell m );
 
     /**
 	 * Bestimmt, ob eine Karte Trumpf ist
@@ -30,7 +29,7 @@ interface IKontrolle
 	 * @param farbe
 	 * @return
 	 */
-    bool istTrumpf(Karte.Wert wert, Karte.Farbe farbe);
+    bool istTrumpf( Karte.Wert wert, Karte.Farbe farbe );
 
     /**
 	 * Errechnet die Laufenden der Spieler.
@@ -39,5 +38,5 @@ interface IKontrolle
 	 * @param model
 	 * @return
 	 */
-    int Laufende(int spieler, int mitspieler, Modell model);
+    int Laufende( int spieler, int mitspieler, Modell model );
 }

@@ -4,32 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Schafkopf_Lib
-{
-    class Farbgeier : IKontrolle
-    {
-        public bool Erlaubt(Modell m, int ID)
-        {
+namespace Schafkopf_Lib {
+    class Farbgeier : IKontrolle {
+        public Farbgeier( Karte.Farbe Farbe ) {
+
+        }
+
+        public bool Erlaubt( Modell m, int ID ) {
             throw new NotImplementedException();
         }
 
-        public bool istTrumpf(Karte.Wert wert, Karte.Farbe farbe)
-        {
+        public bool istTrumpf( Karte.Wert wert, Karte.Farbe farbe ) {
             throw new NotImplementedException();
         }
 
-        public int Laufende(int spieler, int mitspieler, Modell model)
-        {
+        public int Laufende( int spieler, int mitspieler, Modell model ) {
             throw new NotImplementedException();
         }
 
-        public int Mitspieler(Modell m)
-        {
+        public int Mitspieler( Modell m ) {
             throw new NotImplementedException();
         }
 
-        public int Sieger(Modell m, int erster)
-        {
+        public int Sieger( Modell m, int erster ) {
             throw new NotImplementedException();
         }
     }

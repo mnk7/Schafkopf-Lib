@@ -165,9 +165,9 @@ namespace Schafkopf_Lib {
             }
 
             Karte k;
+            int stelle;
             for ( int i = 0; i < spielerkarten.Count(); i++ ) {
                 k = spielerkarten[i];
-                int stelle;
 
                 if ( k.wert.Equals(Karte.Wert.OBER) ) {
                     stelle = ( int )k.farbe;
@@ -175,7 +175,7 @@ namespace Schafkopf_Lib {
                 } else if ( k.wert.Equals(Karte.Wert.UNTER) ) {
                     stelle = 4 + ( int )k.farbe;
                     enthalten[stelle] = true;
-                } else if ( istTrumpf(k.wert, k.farbe) ) {
+                } else if ( k.farbe.Equals(Karte.Farbe.HERZ) ) {
                     //Farbtrumpf
                     //Enum für Wert ist umgedreht aufgestellt -> siehe lib.Karte
                     stelle = 8 + (5 - ( int )k.wert);
@@ -184,7 +184,7 @@ namespace Schafkopf_Lib {
             }
 
             int laufende = 0;
-            for ( int i = 0; i < 12; i++ ) {
+            for ( int i = 0; i < 14; i++ ) {
                 if ( enthalten[i] ) {
                     laufende++;
                 } else {

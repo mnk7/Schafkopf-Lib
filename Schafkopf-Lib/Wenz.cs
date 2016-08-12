@@ -106,9 +106,9 @@ namespace Schafkopf_Lib {
             }
 
             Karte k;
+            int stelle;
             for ( int i = 0; i < spielerkarten.Count(); i++ ) {
                 k = spielerkarten[i];
-                int stelle;
 
                 if ( k.wert.Equals(Karte.Wert.UNTER) ) {
                     stelle = ( int )k.farbe;

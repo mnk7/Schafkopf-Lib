@@ -40,15 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logik\Bot.cs" />
+    <Compile Include="Logik\Client.cs" />
+    <Compile Include="Logik\ClientListener.cs" />
+    <Compile Include="Logik\ClientSender.cs" />
     <Compile Include="Farbgeier.cs" />
     <Compile Include="Farbwenz.cs" />
     <Compile Include="Geier.cs" />
     <Compile Include="Hochzeit.cs" />
     <Compile Include="Karte.cs" />
     <Compile Include="IKontrolle.cs" />
+    <Compile Include="Logik\Mensch.cs" />
+    <Compile Include="Logik\Netzwerk.cs" />
     <Compile Include="Regelwahl.cs" />
     <Compile Include="Sauspiel.cs" />
+    <Compile Include="Logik\Server.cs" />
     <Compile Include="Solo.cs" />
+    <Compile Include="Logik\Spieler.cs" />
     <Compile Include="Wenz.cs" />
     <Compile Include="Modell.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
